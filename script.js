@@ -34,6 +34,7 @@ function toggleDarkMode() {
     document.querySelector('form').classList.toggle('dark-mode');
     document.querySelector('.container').classList.toggle('dark-mode');
     document.querySelector('i').classList.toggle('dark-mode');
+    document.querySelector('p').classList.toggle('dark-mode');
     // Save the user's preference in localStorage
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
@@ -46,12 +47,7 @@ function toggleDarkMode() {
 window.onload = function() {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        document.querySelector('nav').classList.add('dark-mode');
-        document.querySelector('.header-text').classList.add('dark-mode');
-        document.querySelector('.sub-title').classList.add('dark-mode');
-        document.querySelector('.projects-list').classList.add('dark-mode');
-        document.querySelector('form').classList.add('dark-mode');
+        toggleDarkMode();
         document.getElementById('darkModeToggle').checked = true;
     }
 };
