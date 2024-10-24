@@ -29,7 +29,7 @@ function toggleDarkMode() {
     // Apply dark mode styles to all sections needing dark mode colors
     document.querySelector('nav').classList.toggle('dark-mode');
     document.querySelector('.header-text').classList.toggle('dark-mode');
-    document.getElementsByClassName('.sub-title').classList.toggle('dark-mode');
+    document.querySelector('.sub-title').classList.toggle('dark-mode');
     document.querySelector('.projects-list').classList.toggle('dark-mode');
     document.querySelector('form').classList.toggle('dark-mode');
     document.querySelector('.container').classList.toggle('dark-mode');
