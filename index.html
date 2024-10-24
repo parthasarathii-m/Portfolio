@@ -23,6 +23,12 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <div class="dark-mode-toggle">
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+        <span class="slider round"></span>
+    </label>
+</div>
                     <i class="fa-sharp fa-solid fa-circle-xmark" id="closeMenu" onclick="closeMenu()"></i>
                 </ul>
                 
@@ -44,7 +50,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+                    <img src="images/user1.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -57,23 +63,49 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Java</span><br>Problem Solving and Data Structures</li>
-                            <li><span>JavaScript</span><br>Building Web Application</li>
-                            <li><span>C#</span><br>Problem Solving and Building Console Applications</li>
-                            <li><span>SQL</span><br>DataBase</li>
-                            <li><span>Web development</span><br>Front end development</li>
+                            <li id="languages-skills"><span>Languages</span><br>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                            </li>
+                            <li id="technologies-skills"><span>Technologies</span><br>
+                                <ul>
+                                    <li>OOPS</li>
+                                    <li>DBMS</li>
+                                    <li>Linux</li>
+                                    <li>Git and Github</li>
+                                    <li>Node js</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Graduate Engineer Trainee</span><br>Bannari Amman Institute of Technalogy</li>
-                            <li><span>Software Engineer</span><br>Syncfusion</li>
-                            
+                            <li><span>Software Engineer-Syncfusion (Mar 2024 - July 2024)</span><br>
+                                <ul>
+                                    <li>
+                                        Developed CRUD applications using C# for backend functionality and JavaScript for dynamic front-end interfaces.
+                                    </li>
+                                    <li>
+                                        Designed, optimized, and managed databases with Postgres to ensure efficient data handling and retrieval.
+                                    </li>
+                                    <li>
+                                        Collaborated with cross-functional teams during training to deliver scalable and user-friendly applications.
+                                    </li>
+                                    <li>
+                                        Enhanced knowledge of full-stack development, focusing on performance optimization, code quality, and debugging techniques.
+                                    </li>
+                                </ul>
+                                </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Bachelor of Engineering - Computer Science and Engineering</span><br>Bannari Amman Institute of Technalogy</li>
+                            <li><span>Bachelor of Engineering - Computer Science and Engineering</span><br>Bannari Amman Institute of Technalogy ( 2019 - 2023 ) 
+                                
+                            </li>
                         </ul>
                     </div>
                     

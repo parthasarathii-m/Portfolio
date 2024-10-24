@@ -166,6 +166,10 @@ nav ul li a:hover::after {
     display: block;
 }
 
+#experience{
+    margin-bottom: 82px;
+}
+
 /* Projects */
 
 #projects {
@@ -289,6 +293,123 @@ form button {
 #closeMenu {
     display: none;
 }
+
+/* Toggle switch styling */
+.switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+  
+  nav.dark-mode ul li a,
+  nav.dark-mode ul li a:hover::after,
+  .header-text.dark-mode h1,
+  .sub-title.dark-mode,
+  .tab-titles.dark-mode .tab-links,
+  .contact-left.dark-mode p i,
+  .social-icons a.dark-mode,
+  .social-icons a:hover.dark-mode {
+    color: #f5f5f5;
+  }
+  
+  .dark-mode #header {
+    background: #1a1a1a;
+  }
+  
+  .dark-mode .projects-list div {
+    background: #292929;
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .projects-list div:hover {
+    background: #1e3d91;
+  }
+  
+  form.dark-mode input,
+  form.dark-mode textarea {
+    background: #333;
+    color: #fff;
+  }
+  
+  form.dark-mode button {
+    background-color: #1e3d91;
+    color: #fff;
+  }
+  
+  form.dark-mode input::placeholder,
+  form.dark-mode textarea::placeholder {
+    color: #ccc;
+  }
+  
+  nav.dark-mode ul {
+    background: #333;
+  }
+  
+  nav.dark-mode ul li a {
+    color: #f5f5f5;
+  }
+  
+  /* Media query for mobile adjustments in dark mode */
+  @media only screen and (max-width: 700px) {
+    nav.dark-mode ul {
+      background: #1a1a1a;
+    }
+  }
+  
+
+
+/* Style the rest of your elements for dark mode similarly */
 
 /* Media query for mobile screen */
 @media only screen and (max-width:700px) {
