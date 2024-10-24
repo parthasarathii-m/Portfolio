@@ -166,7 +166,11 @@ nav ul li a:hover::after {
     display: block;
 }
 
-#experience{
+#experience {
+    margin-bottom: 82px;
+}
+
+#education {
     margin-bottom: 82px;
 }
 
@@ -296,117 +300,139 @@ form button {
 
 /* Toggle switch styling */
 .switch {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
 }
 
 .switch input {
-  display: none;
+    display: none;
 }
 
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
 }
 
 .slider.round {
-  border-radius: 34px;
+    border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  transition: 0.4s;
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+input:checked+.slider {
+    background-color: #2196F3;
 }
 
-input:checked + .slider:before {
-  transform: translateX(25px);
+input:checked+.slider:before {
+    transform: translateX(25px);
 }
 
 /* Dark mode styles */
 body.dark-mode {
-    background-color: #121212;
+    background-color: #000000;
     color: #f5f5f5;
-  }
-  
-  nav.dark-mode ul li a,
-  nav.dark-mode ul li a:hover::after,
-  .header-text.dark-mode h1,
-  .sub-title.dark-mode,
-  .tab-titles.dark-mode .tab-links,
-  .contact-left.dark-mode p i,
-  .social-icons a.dark-mode,
-  .social-icons a:hover.dark-mode {
+}
+
+nav.dark-mode ul li a,
+nav.dark-mode ul li a:hover::after,
+.header-text.dark-mode h1,
+.sub-title.dark-mode,
+.tab-titles.dark-mode .tab-links,
+.contact-left.dark-mode p i,
+.social-icons a.dark-mode,
+.social-icons a:hover.dark-mode {
     color: #f5f5f5;
-  }
-  
-  .dark-mode #header {
-    background: #1a1a1a;
-  }
-  
-  .dark-mode .projects-list div {
+}
+
+.dark-mode #header {
+    background: #000000;
+}
+
+.dark-mode .sub-title {
+    color: #fff;
+}
+
+
+.dark-mode .projects-list div {
     background: #292929;
     color: #f5f5f5;
-  }
-  
-  .dark-mode .projects-list div:hover {
+    box-shadow: 5px 5px 15px rgba(146, 142, 142, 0.1), -5px -5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.dark-mode .projects-list div:hover {
     background: #1e3d91;
-  }
-  
-  form.dark-mode input,
-  form.dark-mode textarea {
+}
+
+form.dark-mode input,
+form.dark-mode textarea {
     background: #333;
     color: #fff;
-  }
-  
-  form.dark-mode button {
+}
+
+form.dark-mode button {
     background-color: #1e3d91;
     color: #fff;
-  }
-  
-  form.dark-mode input::placeholder,
-  form.dark-mode textarea::placeholder {
+}
+
+form.dark-mode input::placeholder,
+form.dark-mode textarea::placeholder {
     color: #ccc;
-  }
-  
-  nav.dark-mode ul {
-    background: #333;
-  }
-  
-  nav.dark-mode ul li a {
+}
+
+nav.dark-mode ul {
+    background: #000000;
+}
+
+.dark-mode i {
+    color: #fff;
+}
+
+nav.dark-mode ul li a {
     color: #f5f5f5;
-  }
-  
-  /* Media query for mobile adjustments in dark mode */
-  @media only screen and (max-width: 700px) {
-    nav.dark-mode ul {
-      background: #1a1a1a;
-    }
-  }
-  
+}
+
+.dark-mode .projects-list div {
+    color: #f5f5f5;
+    /* Set text color to white */
+}
+
+.dark-mode .container {
+    color: #f5f5f5;
+}
+
+.dark-mode .projects-list div:hover {
+    background: #1e3d91;
+    /* Keep hover color for better visibility */
+}
+
+.contact-left.dark-mode h1,
+.contact-left.dark-mode p {
+    color: #f5f5f5;
+    /* Set text color to white */
+}
 
 
 /* Style the rest of your elements for dark mode similarly */
@@ -414,7 +440,8 @@ body.dark-mode {
 /* Media query for mobile screen */
 @media only screen and (max-width:700px) {
     .header-text {
-        margin-top: 85vh;
+        margin-top: 60vh;
+        margin-bottom: 30%;
         font-size: 16px;
     }
 
@@ -422,15 +449,29 @@ body.dark-mode {
         font-size: 30px;
     }
 
+    nav.dark-mode ul {
+        background: #1a1a1a;
+    }
+
+    #skills{
+        margin-bottom: -40px;
+    }
+    #experience{
+        margin-bottom:-30px;
+    }
+    #education{
+        margin-bottom: -70px;
+    }
     .header-text h1 {
         font-size: 30px;
     }
 
 
-    #openMenu{
+    #openMenu {
         display: block;
         font-size: 30px;
     }
+
     #closeMenu {
         display: block;
         font-size: 25px;
@@ -468,19 +509,20 @@ body.dark-mode {
         cursor: pointer;
     }
 
-    .sub-title{
+    .sub-title {
         font-size: 40px;
     }
 
-    #about .sub-title{
+    #about .sub-title {
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .row{
+    .row {
         flex-direction: column;
     }
-    form{
+
+    form {
         margin-top: 30px;
     }
 }

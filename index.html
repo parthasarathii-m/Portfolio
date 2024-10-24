@@ -19,19 +19,18 @@
                 </h1>
                 <!-- <img src="images/logo.png" class="logo"> -->
                 <ul id="sidemenu">
-                    <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <div class="dark-mode-toggle">
-    <label class="switch">
-        <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
-        <span class="slider round"></span>
-    </label>
-</div>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                     <i class="fa-sharp fa-solid fa-circle-xmark" id="closeMenu" onclick="closeMenu()"></i>
                 </ul>
-                
+
                 <i class="fa-solid fa-bars" id="openMenu" onclick="openMenu()"></i>
             </nav>
 
@@ -54,8 +53,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I'm passionate about continuous learning and growth, always eager to explore new ideas and experiences. Whether it's diving into new technologies or discovering different perspectives!</p>
-                    
+                    <p>I'm passionate about continuous learning and growth, always eager to explore new ideas and
+                        experiences. Whether it's diving into new technologies or discovering different perspectives!
+                    </p>
+
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -64,14 +65,14 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li id="languages-skills"><span>Languages</span><br>
-                                <ul>
+                                <ul style="padding-left: 20px;">
                                     <li>C#</li>
                                     <li>Java</li>
                                     <li>JavaScript</li>
                                 </ul>
                             </li>
                             <li id="technologies-skills"><span>Technologies</span><br>
-                                <ul>
+                                <ul style="padding-left: 20px;">
                                     <li>OOPS</li>
                                     <li>DBMS</li>
                                     <li>Linux</li>
@@ -84,69 +85,89 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>Software Engineer-Syncfusion (Mar 2024 - July 2024)</span><br>
-                                <ul>
+                                <ul style="padding-left: 20px;">
                                     <li>
-                                        Developed CRUD applications using C# for backend functionality and JavaScript for dynamic front-end interfaces.
+                                        Developed CRUD applications using C# for backend functionality and JavaScript
+                                        for dynamic front-end interfaces.
                                     </li>
                                     <li>
-                                        Designed, optimized, and managed databases with Postgres to ensure efficient data handling and retrieval.
+                                        Designed, optimized, and managed databases with Postgres to ensure efficient
+                                        data handling and retrieval.
                                     </li>
                                     <li>
-                                        Collaborated with cross-functional teams during training to deliver scalable and user-friendly applications.
+                                        Collaborated with cross-functional teams during training to deliver scalable and
+                                        user-friendly applications.
                                     </li>
                                     <li>
-                                        Enhanced knowledge of full-stack development, focusing on performance optimization, code quality, and debugging techniques.
+                                        Enhanced knowledge of full-stack development, focusing on performance
+                                        optimization, code quality, and debugging techniques.
                                     </li>
                                 </ul>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Bachelor of Engineering - Computer Science and Engineering</span><br>Bannari Amman Institute of Technalogy ( 2019 - 2023 ) 
+                            <li><span>Bachelor of Engineering - Computer Science and Engineering</span><br><br>
+                                <span style="font-style: italic;font-size: 18px; color: rgb(255, 255, 255);">Bannari Amman Institute of Technalogy ( 2019 - 2023 )</span>
+                                <ul style="padding-left: 20px;">
+                                    <br>
+                                    <li>
+                                        Studied fundamental data structures (arrays, lists, stacks, queues) and algorithm design techniques, including sorting and searching algorithms.
+                                    </li>
+                                    <li>
+                                        Web Development: Explored front-end technologies (HTML, CSS, JavaScript).
+                                    </li>
+                                    <li>
+                                        Object-Oriented Programming: Gained hands-on experience with C++ and Java, focusing on object-oriented principles like inheritance, encapsulation, and polymorphism.
+                                    </li>
+                                </ul>
                                 
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Projects -->
-     <div id="projects">
+    <div id="projects">
         <div class="container">
             <h1 class="sub-title">Projects</h1>
             <div class="projects-list">
                 <div>
-                    <h2>E-Shopping Application </h2>
+                    <h2>Library Management - Application </h2>
                     <p>
-                         Created a web application using HTML, CSS, and JavaScript for the frontend, with C# as the backend and PostgresDB for database management.
+                        Implemented all CRUD operations, enabling user account creation, wallet balance management, and
+                        product purchases.
                     </p>
-                    <a href="#">More</a>
+                    <a style="color: rgb(128, 100, 255);"
+                        href="https://github.com/parthasarathii-m/Library-Management-">More</a>
                 </div>
                 <div>
                     <h2>Hand Cricket - Game </h2>
                     <p>
-                        Hosted the game on GitHub Pages.
+                        Users can select a number from 1 to 6, and the game ends if their selection matches the
+                        computer's choice; otherwise, the score is updated.
                     </p>
-                    <a href="#">More</a>
-                </div>                
+                    <a style="color: rgb(128, 100, 255);" href="https://parthasarathii-m.github.io/HandCricket/">Try out</a>
+                </div>
             </div>
         </div>
-     </div>
+    </div>
 
-     <!-- Contact -->
-      <div id="contact">
+    <!-- Contact -->
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fa-regular fa-envelope" ></i>partasararathyvenkidusamym@gmail.com</p>
+                    <p><i class="fa-regular fa-envelope"></i>partasararathyvenkidusamym@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9786943349</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/parthasarathy-m-31b6bb324/">  
+                        <a href="https://www.linkedin.com/in/parthasarathy-m-31b6bb324/">
                             <i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://github.com/parthasarathii-m">
                             <i class="fa-brands fa-github"></i>
@@ -156,7 +177,7 @@
                 </div>
                 <div class="contact-right">
                     <form action="">
-                        <input type="text" name="name" placeholder="Your Name"  autocomplete="off" required>
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
                         <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
                         <textarea name="Message" rows="6" placeholder="Your Message" autocomplete="off"></textarea>
                         <button type="submit" class="btn">Submit</button>
@@ -164,7 +185,7 @@
                 </div>
             </div>
         </div>
-      </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
